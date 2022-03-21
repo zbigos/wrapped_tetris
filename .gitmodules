@@ -1,0 +1,3 @@
+[submodule "FPGA-tetris"]
+	path = FPGA-tetris
+	url = https://github.com/zbigos/FPGA-tetris

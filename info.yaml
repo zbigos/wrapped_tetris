@@ -1,0 +1,49 @@
+--- 
+# information
+project: 
+  title: "TETRIS on silicon"
+  description: "tetris I guess"
+  picture: ""
+  author: "Zbigniew Drozd"
+  license: LICENSE
+
+# optional interfaces you want to use: gpio, la1, la2, la3, irq, clk2, wishbone & openram
+interfaces: ['la1', 'gpio']
+
+# test within caravel
+caravel_test:
+  recipe: "coco_test"
+  directory: "caravel_test"
+  id: 5
+  module_name: "wrapped_vgademo_on_fpga"
+
+# module test
+# this test is internally disabled, as it draws windows
+# caravel test contains all the testing this would do.
+module_test:
+  recipe: "test_toplevel" 
+  directory: "vgademo-on-fpga"  
+  makefile: "Makefile"
+
+# run the wrapper formal proof
+wrapper_proof:
+  directory: "."
+  sby: "properties.sby"
+
+# openlane config, used in case I need to re-harden
+openlane:
+  config: "config.tcl"
+
+# source required for various configs and module instantiation
+source:
+    - wrapper.v
+    - vgademo-on-fpga/src/sphere.v
+    - vgademo-on-fpga/src/top.v
+    - vgademo-on-fpga/src/vga_core.v
+
+# gds - check nothing on metal 5, DRC & LVS
+final:
+  directory: "final"
+  gds_filename: "gds/wrapped_vgademo_on_fpga.gds"
+  lvs_filename: "verilog/gl/wrapped_vgademo_on_fpga.v"
+  lef_filename: "lef/wrapped_vgademo_on_fpga.lef"
