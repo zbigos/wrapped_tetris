@@ -38,6 +38,12 @@ openlane:
 source:
     - wrapper.v
     - FPGA-tetris/src/top.v
+    - FPGA-tetris/src/gmanager.v
+    - FPGA-tetris/src/blockmemory.v
+    - FPGA-tetris/src/board.v
+    - FPGA-tetris/src/cellshader.v
+    - FPGA-tetris/src/color_lut.v
+
 
 # gds - check nothing on metal 5, DRC & LVS
 final:

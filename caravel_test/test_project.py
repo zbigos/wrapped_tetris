@@ -111,7 +111,7 @@ async def test_start(dut):
                 image = []
                 
                 vframe_ok += 1
-                if vframe_ok == 2:
+                if vframe_ok == 20:
                     return
             vcycle_depth = 0
             vzeros_in_cycle = 0
