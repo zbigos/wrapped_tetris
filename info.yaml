@@ -44,6 +44,27 @@ source:
     - FPGA-tetris/src/cellshader.v
     - FPGA-tetris/src/color_lut.v
 
+    - FPGA-tetris/src/digitdisplay.v
+    - FPGA-tetris/src/gamespeed_display.v
+    - FPGA-tetris/src/meta_mem.v
+    - FPGA-tetris/src/meta_memcell.v
+    - FPGA-tetris/src/meta_memrow.v
+    - FPGA-tetris/src/mod24.v
+    - FPGA-tetris/src/scoredisplay.v
+    - FPGA-tetris/src/screen_manager.v
+    - FPGA-tetris/src/shader.v
+    - FPGA-tetris/src/shifter.v
+    - FPGA-tetris/src/tetron_I.v
+    - FPGA-tetris/src/tetron_La.v
+    - FPGA-tetris/src/tetron_Lb.v
+    - FPGA-tetris/src/tetron_O.v
+    - FPGA-tetris/src/tetron_Sa.v
+    - FPGA-tetris/src/tetron_Sb.v
+    - FPGA-tetris/src/tetron_T.v
+    - FPGA-tetris/src/timer.v
+    - FPGA-tetris/src/vga_core.v
+    - FPGA-tetris/src/volatile_cell_storage.v
+
 
 # gds - check nothing on metal 5, DRC & LVS
 final:
