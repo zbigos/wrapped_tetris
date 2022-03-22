@@ -15,7 +15,7 @@ caravel_test:
   recipe: "coco_test"
   directory: "caravel_test"
   id: 4
-  module_name: "wrapped_vgademo_on_fpga"
+  module_name: "top"
 
 # module test
 # this test is internally disabled, as it draws windows
