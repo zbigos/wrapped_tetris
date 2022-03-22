@@ -37,9 +37,7 @@ openlane:
 # source required for various configs and module instantiation
 source:
     - wrapper.v
-    - vgademo-on-fpga/src/sphere.v
-    - vgademo-on-fpga/src/top.v
-    - vgademo-on-fpga/src/vga_core.v
+    - FPGA-tetris/src/top.v
 
 # gds - check nothing on metal 5, DRC & LVS
 final:
