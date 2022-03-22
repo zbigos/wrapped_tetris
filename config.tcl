@@ -7,7 +7,6 @@ set ::env(TOP_MARGIN_MULT) 4
 set ::env(BOTTOM_MARGIN_MULT) 4
 
 # this might break, point it to pin_order.cfg
-set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
 
 set ::env(TOP_MARGIN_MULT) 4
 set ::env(LEFT_MARGIN_MULT) 12
@@ -18,8 +17,8 @@ set ::env(BOTTOM_MARGIN_MULT) 1
 
 # Change if needed
 set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/FPGA-tetris/src/*.v $::env(DESIGN_DIR)/wrapper.v"
-set ::env(PL_TARGET_DENSITY) 0.60
-set ::env(FP_CORE_UTIL) 50
+set ::env(PL_TARGET_DENSITY) 0.25
+set ::env(FP_CORE_UTIL) 20
 
 set ::env(DESIGN_IS_CORE) 0
 set ::env(RT_MAX_LAYER) {met4}
@@ -28,8 +27,6 @@ set ::env(RT_MAX_LAYER) {met4}
 set ::env(CLOCK_PERIOD) "20.0"
 set ::env(CLOCK_PORT) "wb_clk_i"
 
-set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 800 800"
 
 set filename $::env(DESIGN_DIR)/$::env(PDK)_$::env(STD_CELL_LIBRARY)_config.tcl
 if { [file exists $filename] == 1} {
@@ -51,4 +48,4 @@ set ::env(SYNTH_DEFINES) "MPRJ_IO_PADS=38"
 set ::env(PL_RESIZER_BUFFER_OUTPUT_PORTS) 0
 
 set ::env(DIODE_INSERTION_STRATEGY) 3
-set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 10
+set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 25

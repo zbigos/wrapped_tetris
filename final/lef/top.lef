@@ -1,0 +1,262 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO top
+  CLASS BLOCK ;
+  FOREIGN top ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 712.345 BY 714.905 ;
+  PIN butt1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 708.345 125.540 712.345 126.740 ;
+    END
+  END butt1
+  PIN butt2
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 711.570 710.905 712.130 714.905 ;
+    END
+  END butt2
+  PIN butt3
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 434.650 710.905 435.210 714.905 ;
+    END
+  END butt3
+  PIN butt4
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 276.870 0.000 277.430 4.000 ;
+    END
+  END butt4
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 708.345 564.140 712.345 565.340 ;
+    END
+  END clk
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 695.470 0.000 696.030 4.000 ;
+    END
+  END reset
+  PIN vccd1
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 2.480 22.640 702.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 174.640 2.480 176.240 702.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 328.240 2.480 329.840 702.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 481.840 2.480 483.440 702.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 635.440 2.480 637.040 702.000 ;
+    END
+  END vccd1
+  PIN vga_b[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 584.540 4.000 585.740 ;
+    END
+  END vga_b[0]
+  PIN vga_b[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 296.190 710.905 296.750 714.905 ;
+    END
+  END vga_b[1]
+  PIN vga_b[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT -0.050 0.000 0.510 4.000 ;
+    END
+  END vga_b[2]
+  PIN vga_b[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 157.730 710.905 158.290 714.905 ;
+    END
+  END vga_b[3]
+  PIN vga_g[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 553.790 0.000 554.350 4.000 ;
+    END
+  END vga_g[0]
+  PIN vga_g[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 138.410 0.000 138.970 4.000 ;
+    END
+  END vga_g[1]
+  PIN vga_g[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 145.940 4.000 147.140 ;
+    END
+  END vga_g[2]
+  PIN vga_g[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 708.345 417.940 712.345 419.140 ;
+    END
+  END vga_g[3]
+  PIN vga_h_sync
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 292.140 4.000 293.340 ;
+    END
+  END vga_h_sync
+  PIN vga_r[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 573.110 710.905 573.670 714.905 ;
+    END
+  END vga_r[0]
+  PIN vga_r[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 415.330 0.000 415.890 4.000 ;
+    END
+  END vga_r[1]
+  PIN vga_r[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 438.340 4.000 439.540 ;
+    END
+  END vga_r[2]
+  PIN vga_r[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.050 710.905 16.610 714.905 ;
+    END
+  END vga_r[3]
+  PIN vga_v_sync
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 708.345 271.740 712.345 272.940 ;
+    END
+  END vga_v_sync
+  PIN vssd1
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 97.840 2.480 99.440 702.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 251.440 2.480 253.040 702.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 405.040 2.480 406.640 702.000 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 558.640 2.480 560.240 702.000 ;
+    END
+  END vssd1
+  OBS
+      LAYER li1 ;
+        RECT 5.520 2.635 706.560 701.845 ;
+      LAYER met1 ;
+        RECT 0.070 2.480 712.010 702.000 ;
+      LAYER met2 ;
+        RECT 0.100 710.625 15.770 711.690 ;
+        RECT 16.890 710.625 157.450 711.690 ;
+        RECT 158.570 710.625 295.910 711.690 ;
+        RECT 297.030 710.625 434.370 711.690 ;
+        RECT 435.490 710.625 572.830 711.690 ;
+        RECT 573.950 710.625 711.290 711.690 ;
+        RECT 0.100 4.280 711.980 710.625 ;
+        RECT 0.790 2.480 138.130 4.280 ;
+        RECT 139.250 2.480 276.590 4.280 ;
+        RECT 277.710 2.480 415.050 4.280 ;
+        RECT 416.170 2.480 553.510 4.280 ;
+        RECT 554.630 2.480 695.190 4.280 ;
+        RECT 696.310 2.480 711.980 4.280 ;
+      LAYER met3 ;
+        RECT 4.000 586.140 708.345 701.925 ;
+        RECT 4.400 584.140 708.345 586.140 ;
+        RECT 4.000 565.740 708.345 584.140 ;
+        RECT 4.000 563.740 707.945 565.740 ;
+        RECT 4.000 439.940 708.345 563.740 ;
+        RECT 4.400 437.940 708.345 439.940 ;
+        RECT 4.000 419.540 708.345 437.940 ;
+        RECT 4.000 417.540 707.945 419.540 ;
+        RECT 4.000 293.740 708.345 417.540 ;
+        RECT 4.400 291.740 708.345 293.740 ;
+        RECT 4.000 273.340 708.345 291.740 ;
+        RECT 4.000 271.340 707.945 273.340 ;
+        RECT 4.000 147.540 708.345 271.340 ;
+        RECT 4.400 145.540 708.345 147.540 ;
+        RECT 4.000 127.140 708.345 145.540 ;
+        RECT 4.000 125.140 707.945 127.140 ;
+        RECT 4.000 2.555 708.345 125.140 ;
+      LAYER met4 ;
+        RECT 23.295 62.055 97.440 635.625 ;
+        RECT 99.840 62.055 174.240 635.625 ;
+        RECT 176.640 62.055 251.040 635.625 ;
+        RECT 253.440 62.055 327.840 635.625 ;
+        RECT 330.240 62.055 404.640 635.625 ;
+        RECT 407.040 62.055 481.440 635.625 ;
+        RECT 483.840 62.055 515.825 635.625 ;
+  END
+END top
+END LIBRARY
+
