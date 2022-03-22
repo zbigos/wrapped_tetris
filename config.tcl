@@ -1,5 +1,5 @@
 # User config
-set ::env(DESIGN_NAME) "top"
+set ::env(DESIGN_NAME) "wrapped_tetris"
 set ::env(ROUTING_CORES) 16
 set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) 0.1
 set ::env(GLB_RESIZER_HOLD_SLACK_MARGIN) 0.1
@@ -17,8 +17,8 @@ set ::env(BOTTOM_MARGIN_MULT) 1
 
 # Change if needed
 set ::env(VERILOG_FILES) "$::env(DESIGN_DIR)/FPGA-tetris/src/*.v $::env(DESIGN_DIR)/wrapper.v"
-set ::env(PL_TARGET_DENSITY) 0.25
-set ::env(FP_CORE_UTIL) 20
+set ::env(PL_TARGET_DENSITY) 0.3
+set ::env(FP_CORE_UTIL) 25
 
 set ::env(DESIGN_IS_CORE) 0
 set ::env(RT_MAX_LAYER) {met4}

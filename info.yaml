@@ -69,6 +69,6 @@ source:
 # gds - check nothing on metal 5, DRC & LVS
 final:
   directory: "final"
-  gds_filename: "gds/top.gds"
-  lvs_filename: "verilog/gl/top.v"
-  lef_filename: "lef/top.lef"
+  gds_filename: "gds/wrapped_tetris.gds"
+  lvs_filename: "verilog/gl/wrapped_tetris.v"
+  lef_filename: "lef/wrapped_tetris.lef"

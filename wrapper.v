@@ -160,10 +160,10 @@ module wrapped_tetris(
         .vga_r(buf_io_out[16:13]),
         .vga_g(buf_io_out[20:17]),
         .vga_b(buf_io_out[24:21]),
-        .butt1(io_in[22]),
-        .butt2(io_in[22]),
-        .butt3(io_in[22]),
-        .butt4(io_in[22])        
+        .butt1(io_in[25]),
+        .butt2(io_in[26]),
+        .butt3(io_in[27]),
+        .butt4(io_in[28])        
     );
 
 endmodule 
